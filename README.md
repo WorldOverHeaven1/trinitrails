@@ -26,8 +26,5 @@ Skip link, landmarks (`header/nav/main/footer`), `aria-label`, `aria-expanded` m
 ## SEO
 Unique title/description and canonical per page, Open Graph tags, JSON-LD (WebSite), clean file names, one h1 per page, `robots.txt`, `sitemap.xml`.
 
-## Contact form
-Validates name, email, address, telephone (client-side, JS). Handler: set the form `action` to your Formspree endpoint (replace `YOUR_FORM_ID`); until then it runs in demo mode.
-
 ## Validation
 All six pages pass the W3C Nu HTML Checker with 0 errors/warnings.
