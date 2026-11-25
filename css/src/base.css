@@ -1,0 +1,9 @@
+/* Base element styles (module 1 of 2) */
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); color: var(--color-ink); background: var(--color-sand); line-height: 1.65; }
+h1, h2, h3 { font-family: var(--font-display); color: var(--color-deep); line-height: 1.2; }
+a { color: var(--color-deep); }
+:focus-visible { outline: 3px solid var(--color-coral); outline-offset: 3px; }
+.skip-link { position: absolute; left: -999px; top: 0; background: #fff; padding: .6rem 1rem; z-index: 100; }
+.skip-link:focus { left: 1rem; top: 1rem; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; transition: none !important; } }

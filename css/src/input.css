@@ -1,0 +1,16 @@
+/* Trini Trails - Tailwind CSS v4 entry file.
+   Build: npx @tailwindcss/cli -i css/src/input.css -o css/style.css --minify */
+@import "tailwindcss";
+@import "./base.css" layer(base);
+@import "./components.css" layer(components);
+
+@theme {
+  --color-sand: #fbf6ea;
+  --color-deep: #0b4f5c;
+  --color-lagoon: #2fb7b0;
+  --color-sun: #ffb347;
+  --color-coral: #e4572e;
+  --color-ink: #1d2b2f;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+}

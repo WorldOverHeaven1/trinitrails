@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Trini Trails | Trip Questions</title>
+<meta name="description" content="Send a question about travelling to Trinidad and Tobago. The form checks your name, email, address and phone number.">
+<link rel="canonical" href="https://trinitrails.netlify.app/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Trini Trails">
+<meta property="og:title" content="Contact Trini Trails | Trip Questions">
+<meta property="og:description" content="Send a question about travelling to Trinidad and Tobago. The form checks your name, email, address and phone number.">
+<meta property="og:url" content="https://trinitrails.netlify.app/contact.html">
+<meta property="og:image" content="https://trinitrails.netlify.app/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b4f5c">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap"></noscript>
+<link rel="stylesheet" href="css/style.css?v=1.0.0">
+</head>
+<body class="min-h-screen flex flex-col">
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="bg-deep sticky top-0 z-40 shadow-lg">
+ <div class="max-w-6xl mx-auto px-4 flex items-center justify-between py-3">
+  <a href="index.html" class="flex items-center gap-2 text-white no-underline font-display text-2xl font-bold"><img src="img/favicon.svg" width="36" height="36" alt="">Trini Trails</a>
+  <button id="menu-toggle" class="md:hidden text-white border border-white/60 rounded-lg px-3 py-1.5" aria-expanded="false" aria-controls="site-nav">&#9776; Menu</button>
+  <nav id="site-nav" aria-label="Main" class="hidden md:block absolute md:static top-full left-0 right-0 bg-deep md:bg-transparent px-4 pb-3 md:p-0">
+   <ul class="flex flex-col md:flex-row gap-1 list-none m-0 p-0"><li><a href="index.html" class="block px-3 py-2 rounded-lg font-semibold hover:bg-white/15 text-white">Home</a></li><li><a href="destinations.html" class="block px-3 py-2 rounded-lg font-semibold hover:bg-white/15 text-white">Destinations</a></li><li><a href="food.html" class="block px-3 py-2 rounded-lg font-semibold hover:bg-white/15 text-white">Food</a></li><li><a href="culture.html" class="block px-3 py-2 rounded-lg font-semibold hover:bg-white/15 text-white">Culture</a></li><li><a href="gallery.html" class="block px-3 py-2 rounded-lg font-semibold hover:bg-white/15 text-white">Gallery</a></li><li><a href="contact.html" class="block px-3 py-2 rounded-lg font-semibold hover:bg-white/15 bg-sun text-ink hover:bg-sun" aria-current="page">Contact</a></li></ul>
+  </nav>
+ </div>
+</header>
+<main id="main" class="flex-1">
+<section class="bg-deep text-white"><div class="max-w-6xl mx-auto px-4 py-12"><h1 class="!text-white text-4xl md:text-5xl font-bold mb-3">Contact us</h1><p class="text-lg max-w-2xl text-white/90">Questions about a trip? Send a message and we will reply soon.</p></div></section><section class="max-w-6xl mx-auto px-4 py-10 grid gap-10 md:grid-cols-2">
+ <form id="contact-form" class="card p-6 grid gap-4" action="https://formspree.io/f/YOUR_FORM_ID" method="post" novalidate>
+  <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-err"><p class="error" id="name-err" role="alert"></p></div>
+  <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-err"><p class="error" id="email-err" role="alert"></p></div>
+  <div class="field"><label for="address">Home address</label><input id="address" name="address" type="text" autocomplete="address-line1" required aria-describedby="address-err" placeholder="12 Example Street, Port of Spain"><p class="error" id="address-err" role="alert"></p></div>
+  <div class="field"><label for="tel">Telephone number</label><input id="tel" name="tel" type="tel" autocomplete="tel" required aria-describedby="tel-err" placeholder="868-555-0142"><p class="error" id="tel-err" role="alert"></p></div>
+  <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="4" aria-describedby="message-err"></textarea><p class="error" id="message-err" role="alert"></p></div>
+  <button class="btn btn-deep justify-self-start" type="submit">Send message</button>
+  <p id="form-status" class="font-bold" role="status"></p>
+ </form>
+ <div><h2 class="text-2xl font-bold mb-3">Visit or write</h2><p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero sed cursus ante dapibus diam.</p><p>Email: hello@trinitrails.example<br>Phone: 868-555-0142<br>Address: 1 Demo Street, Port of Spain, Trinidad and Tobago</p></div>
+</section>
+</main>
+<footer class="bg-deep text-white/85 mt-12">
+ <div class="max-w-6xl mx-auto px-4 py-8 grid gap-6 md:grid-cols-3 text-sm">
+  <div><p class="font-display text-xl text-white mb-1">Trini Trails</p><p>A personal project for CPTR331 Web Development. All text is demo content and the images are original illustrations.</p></div>
+  <nav aria-label="Footer"><p class="font-bold text-white mb-1">Pages</p><ul class="list-none p-0 m-0 grid gap-1"><li><a class="text-sun" href="index.html">Home</a></li><li><a class="text-sun" href="destinations.html">Destinations</a></li><li><a class="text-sun" href="food.html">Food</a></li><li><a class="text-sun" href="culture.html">Culture</a></li><li><a class="text-sun" href="gallery.html">Gallery</a></li><li><a class="text-sun" href="contact.html">Contact</a></li></ul></nav>
+  <div><p class="font-bold text-white mb-1">Contact</p><p>hello@trinitrails.example<br>868-555-0142</p><p class="mt-2">&copy; <span id="year">2026</span> Trini Trails</p></div>
+ </div>
+</footer>
+<script src="js/main.js?v=1.0.0" defer></script>
+<script src="js/contact.js?v=1.0.0" defer></script>
+</body>
+</html>

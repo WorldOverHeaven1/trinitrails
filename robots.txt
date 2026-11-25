@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://trinitrails.netlify.app/sitemap.xml
